@@ -1,5 +1,5 @@
 if __name__ == "__main__":
 
-    from Scraper import Scraper
-    didy = Scraper("url.txt")
+    from src.Scraper import Scraper
+    didy = Scraper("config/url.txt")
     didy.run()

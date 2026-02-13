@@ -81,14 +81,10 @@ class Scraper:
         Select(cat).select_by_index(0)
         Select(country).select_by_index(0)
         Select(state).select_by_index(0)
-        sleep(2)
-        try:
-            WebDriverWait(self.driver,10).until(EC.element_to_be_clickable(submit)).click()
-            self.wdwait.until(EC.url_changes(url))
-        except TimeoutException:
-            print(f"Timeout while loading {url}")
-            return
+        sleep(5)
+        submit.click()
         print(f"Successfully loaded {url}")
+        sleep(10000) #do other stuff here
 
         
 
