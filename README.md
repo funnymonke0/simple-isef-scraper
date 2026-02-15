@@ -1,6 +1,6 @@
 # Automated Data Scraper
 
-A self-updating repository that scrapes data from https://abstracts.societyforscience.org/ and archives it into a CSV dataset.
+A self-updating repository that scrapes data from https://abstracts.societyforscience.org/ every month and archives it into a CSV dataset.
 
 ## Status
 **Last Automated Update:** <!-- LAST_UPDATE --> 2026-02-15 04:42:44 UTC <!-- END_UPDATE -->
