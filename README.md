@@ -3,7 +3,7 @@
 A self-updating repository that scrapes data from https://abstracts.societyforscience.org/ and archives it into a CSV dataset.
 
 ## Status
-**Last Automated Update:** <!-- LAST_UPDATE --> never <!-- END_UPDATE -->
+**Last Automated Update:** <!-- LAST_UPDATE --> 2026-02-15 04:42:44 UTC <!-- END_UPDATE -->
 
 ## Data
 You can find the full dataset here: **[Download dataset.csv](./current/dataset.csv)**
