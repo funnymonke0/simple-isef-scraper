@@ -49,15 +49,16 @@ class Scraper:
             return
 
         soup = BeautifulSoup(response.content, 'html.parser')   
-        
+        print(f"Successfully parsed HTML from {url}")
         data = []
         for row in soup.find_all('tr'):
             cols = [td.get_text(strip=True) for td in row.find_all('td')]
             if cols: data.append(cols)
-
+        print(f"Successfully extracted data from {url}")
         # Save to CSV
         os.makedirs('current', exist_ok=True)
         with open('current/dataset.csv', 'w', newline='', encoding='utf-8') as f:
             writer = csv.writer(f)
             writer.writerow(['Year', 'Finalist Name(s)', 'Project Title', 'Category', 'Fair Country', 'Fair State', 'Fair Province', "Awards Won"])
             writer.writerows(data)
+        print(f"Successfully saved data to current/dataset.csv from {url}")

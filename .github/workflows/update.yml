@@ -1,0 +1,26 @@
+name: Update README
+on:
+  schedule:
+    - cron: '* * * * *' # Runs on the first day of every month at midnight
+  workflow_dispatch: # Allows you to run it manually
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with: { python-version: '3.x' }
+      - run: python run.py
+      - run: python src/timestamp.py
+      - name: Commit and Push
+        run: |
+          git config --global user.name "funnymonke0"
+          git config --global user.email "aivectorec@gmail.com"
+          git add .
+          git commit -m "Auto-update dataset and README" || exit 0
+          git push
