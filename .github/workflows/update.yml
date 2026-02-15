@@ -1,7 +1,7 @@
-name: Update README
+name: Update
 on:
   schedule:
-    - cron: '* * * * *' # Runs on the first day of every month at midnight
+    - cron: '0 0 1 * *' # Runs on the first day of every month at midnight
   workflow_dispatch: # Allows you to run it manually
 
 permissions:
