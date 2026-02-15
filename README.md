@@ -16,6 +16,6 @@ If you want to run the scraper manually on your own machine:
    ```bash
    git clone https://github.com/funnymonke0/simple-isef-scraper
    cd simple-isef-scraper
-   pip install requirements.txt
+   pip install -r requirements.txt
    python run.py
    ```
