@@ -1,4 +1,4 @@
-#Automated Data Scraper
+# Automated Data Scraper
 
 A self-updating repository that scrapes data from https://abstracts.societyforscience.org/ and archives it into a CSV dataset.
 
