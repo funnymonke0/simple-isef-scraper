@@ -16,12 +16,12 @@ If you want to run the scraper manually on your own machine:
    ```bash
    git clone https://github.com/funnymonke0/simple-isef-scraper
    ```
-2. ***Install Dependencies***
+2. **Install Dependencies**
    ```bash
    cd simple-isef-scraper
    pip install -r requirements.txt
    ```
-3. ***Run***
+3. **Run**
    ```bash
    python run.py
    ```
